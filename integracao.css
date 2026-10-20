@@ -1,0 +1,18 @@
+
+/* Integração dos documentos ao visual original do Painel. */
+footer nav{margin:0;justify-content:flex-start;gap:10px 22px}
+.documento{max-width:70rem;margin:auto;padding:64px max(20px,5vw) 80px;overflow-wrap:anywhere}
+.documento>h1{font-size:clamp(2.3rem,5vw,4.8rem);max-width:20ch;margin-bottom:28px}
+.documento h2{font-size:clamp(1.4rem,3vw,2rem);margin:48px 0 16px}
+.documento p,.documento li{max-width:75ch;color:var(--fraco)}
+.documento strong{color:var(--texto)}
+.documento .capa{display:flex;align-items:center;gap:32px;padding:0 0 36px;border-bottom:1px solid var(--linha)}
+.documento .capa>img{width:100px;flex-shrink:0}
+.documento .capa h1{font-size:clamp(2.2rem,5vw,4.5rem)}
+.documento table{width:100%;border-collapse:collapse;font-size:.9em}
+.documento th,.documento td{text-align:left;padding:16px 12px;border-bottom:1px solid var(--linha);overflow-wrap:anywhere}
+.documento th{color:var(--amarelo)}
+.documento .passos{padding-left:24px}.documento .passos li{padding:10px 0 10px 8px}
+.integracao-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--amarelo);outline-offset:5px}
+@media(max-width:640px){.topo .dentro{gap:14px}.topo nav{margin-left:0;width:100%;gap:8px 16px;font-size:.85em}.documento{padding-top:40px}.documento .capa{display:block}.documento .capa>img{margin-bottom:24px}.documento th,.documento td{padding:10px 5px;font-size:.85em}}
